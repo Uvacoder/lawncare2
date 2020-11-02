@@ -1,0 +1,141 @@
+/*Top of the page header in blue*/
+.portfolio-page-title {
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  background-color: #0091DE;
+  text-align: center;
+  color: #fff;
+  font-size: 1.7rem;
+  padding: 2rem 0; }
+
+.portfolio-page-title::after {
+  content: "";
+  display: block;
+  border-bottom: solid #fff 3.5px;
+  margin: .3rem auto 0 auto;
+  width: 6.5%; }
+
+/*Grid display for portfolio*/
+.portfolio-grid {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem auto 5rem auto;
+  max-width: 73%; }
+
+.portfolio-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6rem; }
+
+.portfolio-hover-text a {
+  display: none; }
+
+.portfolio-hover-text a {
+  padding: 1rem 1.5rem;
+  background-color: #1e9ee2;
+  color: #fff;
+  border: solid #fff thin; }
+
+.portfolio-box-image {
+  height: 55vh;
+  width: 100%; }
+
+.portfolio-box-image img {
+  height: 100%;
+  width: 100%; }
+
+.portfolio-description-container {
+  background-color: #1e9ee2;
+  color: #fff;
+  padding-bottom: 3rem; }
+
+/*Service name on each box*/
+.portfolio-service {
+  margin: 1rem 0 0 1.5rem;
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: .03rem; }
+
+.bottom-flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 1.5rem 0 1.5rem; }
+
+/*Bottom content containing company information*/
+.portfolio-company-container {
+  display: flex; }
+
+/*Left side of the portfolio box holding the company name*/
+.portfolio-left-side {
+  margin-right: 1rem; }
+
+.portfolio-company p span {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  letter-spacing: .06rem; }
+
+/*Right side of the portfolio box holding the date and location*/
+.portfolio-right-side {
+  padding-left: 1rem;
+  border-left: solid #fff 1.25px; }
+
+.portfolio-right-side span {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  letter-spacing: .06rem; }
+
+.portfolio-location {
+  margin-top: .5rem; }
+
+.portfolio-button a {
+  color: #1e9ee2;
+  background-color: #f9f9f9;
+  padding: .7rem 1rem;
+  border-radius: 4px;
+  transition-property: all;
+  transition-duration: .5s; }
+
+.portfolio-button a:hover {
+  color: var(--site-white);
+  background-color: #0091DE;
+  border: solid #fff thin; }
+
+@media (max-width: 840px) {
+  .portfolio-company-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .portfolio-left-side {
+    margin-right: 0; }
+  .portfolio-right-side {
+    padding-left: 0;
+    border-left: none; }
+  .portfolio-company {
+    margin: .6rem 0; }
+  /*Service name on each box*/
+  .portfolio-service {
+    text-align: center; }
+  .bottom-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0; }
+  .portfolio-button {
+    margin-top: 1rem; } }
+
+@media (max-width: 415px) {
+  /*Grid display for portfolio*/
+  .portfolio-grid {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem auto 5rem auto;
+    max-width: 90%; }
+  .portfolio-box-image {
+    height: 30vh;
+    width: 100%; }
+  /*Service name on each box*/
+  .portfolio-service {
+    font-size: 1.6rem; } }

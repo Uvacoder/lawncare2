@@ -1,0 +1,157 @@
+.contact-page-title {
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  background-color: #0091DE;
+  text-align: center;
+  color: #fff;
+  font-size: 1.7rem;
+  padding: 2rem 0; }
+
+.contact-page-title::after {
+  content: "";
+  display: block;
+  border-bottom: solid #fff 3.5px;
+  margin: .3rem auto 0 auto;
+  width: 6.5%; }
+
+.contact-page-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 4rem;
+  max-width: 90%;
+  margin: 5rem auto 8rem auto; }
+
+/*Blue box with phone number on the left side of the page*/
+.phone-number-box {
+  background-color: #0091DE;
+  color: #fff;
+  padding: 2rem;
+  text-align: center; }
+
+/*icon in the phone box*/
+.phone-number-box i {
+  font-size: 8rem; }
+
+.phone-box-large-text {
+  font-size: 2.2rem;
+  margin-top: .8rem; }
+
+.phone-box-small-text {
+  font-size: 1rem;
+  margin-top: .6rem; }
+
+.phone-box-small-text::after {
+  content: "";
+  display: block;
+  border-bottom: solid #fff 5px;
+  width: 24%;
+  margin: 1rem auto 0 auto; }
+
+.phone-box-bottom-number {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-top: 1.2rem; }
+
+/*Sections beneath phone number box on the left side*/
+.left-box-section {
+  margin-top: 4.5rem; }
+
+.left-box-section-header {
+  color: #1e9ee2;
+  font-size: 1.85rem;
+  margin-bottom: .85rem; }
+
+.left-box-section-small {
+  color: #63666A;
+  margin-bottom: 1.75rem; }
+
+.left-box-section a {
+  padding: .85rem 1.4rem;
+  border: solid #73c573 2.45px;
+  color: #1e9ee2;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition-property: all;
+  transition-duration: .4s; }
+
+.left-box-section a:hover {
+  color: #fff;
+  background-color: #73c573; }
+
+.contact-form-flex {
+  display: flex;
+  flex-direction: column; }
+
+.contact-form-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem; }
+
+/*Labels for each input/selection*/
+.contact-form-box label {
+  color: #0a0a0a;
+  font-size: .8rem;
+  margin: 0 .2rem .4rem 0; }
+
+/*Input for each box*/
+.contact-form-box input {
+  padding: .6rem 0 .5rem .5rem;
+  border: solid #007CD6 thin;
+  letter-spacing: .03rem;
+  font-size: 1rem; }
+
+.contact-form-box input:focus {
+  outline: none; }
+
+.form-checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: .8rem;
+  width: 50%; }
+
+.checkbox-header {
+  font-weight: bold;
+  font-size: 3rem; }
+
+.checkbox-header-small {
+  font-size: .85rem;
+  margin-bottom: 1rem; }
+
+/*Dropdown for state box on contact form*/
+.contact-form-box select {
+  padding: 1rem 0;
+  border: solid #007CD6 thin; }
+
+.contact-form-box textarea {
+  height: 25vh;
+  border: solid #007CD6 thin;
+  padding: .5rem 0 0 .5rem;
+  font-size: 1.1rem; }
+
+.contact-form-box textarea:focus {
+  outline: none; }
+
+.contact-form-button button {
+  padding: .6rem 1.5rem;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #007CD6;
+  border: none;
+  cursor: pointer; }
+
+/*Media Queries below*/
+@media (max-width: 836px) {
+  .contact-page-container {
+    display: flex;
+    flex-direction: column-reverse; }
+  .contact-form-flex {
+    margin-bottom: 2rem; }
+  .contact-page-left {
+    text-align: center; }
+  .form-checkbox-grid {
+    grid-template-columns: repeat(1, 1fr); } }
+
+/*Media Queries below*/
+@media (max-width: 415px) {
+  .phone-box-bottom-number {
+    font-size: 1.5rem; } }

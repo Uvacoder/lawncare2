@@ -1,0 +1,61 @@
+@import'variables';
+
+.about-page-title{
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  background-color: $site-blue;
+  text-align: center;
+  color: $site-white;
+  font-size: 1.7rem;
+  padding: 2rem 0;
+}
+
+.about-page-title::after{
+  content: "";
+  display: block;
+  border-bottom: solid $site-white 3.5px;
+  margin:.3rem auto 0 auto;
+  width: 6.5%;
+}
+
+/*About us container*/
+.about-us-container{
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.about-us-content-header{
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.about-us-content{
+  font-size: 1.1rem;
+  margin-bottom: 14rem;
+  p{
+    margin-top: 2rem;
+  }
+
+}
+
+
+
+@media(max-width:414px){
+  /*About us container*/
+  .about-us-container{
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  .about-us-content-header{
+    font-size: 1.5rem;
+  }
+
+  .about-us-content p{
+    margin-top: 2rem;
+    line-height: 1.5rem;
+  }
+
+}

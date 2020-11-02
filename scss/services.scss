@@ -1,0 +1,100 @@
+@import'variables';
+
+
+/*Top of the page header in blue*/
+.services-page-title{
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  background-color: $site-blue;
+  text-align: center;
+  color: $site-white;
+  font-size: 1.7rem;
+  padding: 2rem 0;
+}
+
+.services-page-title::after{
+  content: "";
+  display: block;
+  border-bottom: solid $site-white 3.5px;
+  margin:.3rem auto 0 auto;
+  width: 6.5%;
+}
+
+/*Grid display for services*/
+.services-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 6rem;
+  max-width: 90%;
+  margin:3rem auto 8rem auto;
+}
+
+/*Individual boxes on the grid*/
+.services-box{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-self: center;
+  max-width: 90%;
+}
+
+.services-box-icon i{
+  background-color: $site-snow;
+  color: $icon-grey;
+  font-size: 3.7rem;
+  padding: 1.4rem;
+  border-radius: 50%;
+  
+}
+
+.services-box-title{
+  color: $site-dark-grey;
+  margin-top: 2rem;
+  font-size: 1.05rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .03rem;
+}
+
+.services-box-description{
+  color: $site-dark-grey;
+  font-size: 1rem;
+  line-height: 1.65rem;
+  margin-top: 1.5rem;
+}
+
+.services-box-button{
+  margin-top: 2rem;
+}
+
+.services-box-button a{
+  border: solid $site-green 3px;
+  background-color: $site-green;
+  color: $site-snow;
+  padding: .75rem 1rem;
+  transition-property: all;
+  transition-duration: .5s;
+}
+
+.services-box-button a:hover{
+  background-color: $site-snow;
+  color: $site-green;
+}
+
+@media(max-width:860px){
+  /*Grid display for services*/
+  .services-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+}
+@media(max-width:590px){
+  /*Grid display for services*/
+  .services-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+}
