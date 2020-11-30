@@ -181,7 +181,6 @@ header{
     margin: 2rem auto 0 auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 1rem;
 
     /*Individual boxes in top services grid*/
     .top-service-box{
@@ -193,6 +192,7 @@ header{
       padding: 5rem;
       transition-property: all;
       transition-duration: .5s;
+      margin-right: 1rem;
     }
 
     /*top service box hover*/
@@ -349,7 +349,6 @@ header{
 .additional-services-grid{
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-column-gap: 1rem;
   margin:3rem  auto;
   max-width: 95%;
 }
@@ -361,6 +360,7 @@ header{
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-right: 1rem;
 }
 
 /*image container for additional services box*/
@@ -469,7 +469,6 @@ footer{
   .home-section-a .top-services-grid{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-row-gap: 3rem;
     width: 70%;
   }
 
@@ -477,6 +476,7 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 4rem 3rem;
+    margin-bottom: 3rem;
   }
   
   /*Description for top services box*/
@@ -513,7 +513,6 @@ footer{
   .additional-services-grid{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-row-gap: 3rem;
     margin:3rem  auto;
     max-width: 95%;
   }
@@ -522,6 +521,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-self: center;
+    margin-bottom: 3rem;
   }
 
   /*image container for additional services box*/
