@@ -21,9 +21,13 @@
 .contact-page-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 4rem;
   max-width: 90%;
   margin:5rem auto 8rem auto;
+}
+
+/*Add margin to the left side of the contact page*/
+.contact-page-left{
+  margin-right: 4rem;
 }
 
 /*Blue box with phone number on the left side of the page*/
@@ -129,8 +133,12 @@
 .form-checkbox-grid{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  grid-row-gap: .8rem;
   width: 50%;
+}
+
+/*Add margin to the bottom of each checkbox and label*/
+.checkbox-group{
+  margin-bottom: .8rem;
 }
 
 .checkbox-header{
