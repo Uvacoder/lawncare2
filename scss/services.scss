@@ -37,6 +37,7 @@
   text-align: center;
   justify-self: center;
   max-width: 90%;
+  margin: 0 1rem 6rem 0;
 }
 
 .services-box-icon i{
@@ -44,8 +45,19 @@
   color: $icon-grey;
   font-size: 3.7rem;
   padding: 1.4rem;
-  border-radius: 50%;
-  
+  border-radius: 50%; 
+}
+
+/*Icon in the weed control service box*/
+.services-box-icon .fa-pagelines{
+  padding: 1.4rem 1.8rem;
+  border-radius: 50%; 
+}
+
+/*icon in the organic lawn care service box*/
+.services-box-icon .fa-tint{
+  padding: 1.4rem 1.8rem;
+  border-radius: 50%; 
 }
 
 .services-box-title{
